@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>{{t}}</title>
+		<!-- href="/static/assets/style.css"-->
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/style.css')}}" >
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/emoji.css')}}" >
+		<script src="{{ url_for('static',filename='assets/twemoji.min.js')}}"></script>
+		<script src="{{ url_for('static',filename='assets/emoji.js')}}"></script>
+	</head>
+<body>
+	<hr>
+
+	<div span="right">
+	<form action="/search"	method="GET" >
+		<table class="none" id="close">
+		<tr>
+		<td></td><td></td>
+		<td><big><b>Search Order for Hold Release:</b></big></td>
+		<td><select name="refer" required>
+			<option value="TS1">TS1CG1 Order</option>
+			<option value="TS2">TS2CG1 Order</option>
+			<option value="TS3">TS3CG1 Order</option>
+		</select></td>
+		<td><input type="text" name="key" placeholder="Search Order" size="25" /></td>
+		<td><button type="submit">Search</button></td>
+		</tr>
+		</table>
+	</form>
+	</div>
+	<hr/>
+	<form action="/action" method="POST">
+	<table class="none">
+	</form>
+	</table>
+	<script>
+
+	</script>
+</body>
+</html>

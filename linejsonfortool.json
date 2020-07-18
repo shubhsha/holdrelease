@@ -1,0 +1,25 @@
+{
+  "HoldRequest": {
+    "sender": {
+      "serviceContext": {
+        "svcType": 965,
+        "requestType": "RELEASE",
+        "version": 1
+      },
+      "userID": "shubhsha",
+      "applicationName": "OPL",
+      "proxyUserID": "OPLADMIN",
+      "userType": "External"
+    },
+    "requestPayload": [
+      {
+        "holdID": "30167",
+        "holdName": "Subscription Fulfilment Hold",
+        "holdReleaseReason": "Released from OPL QA Tool",
+        "holdReleaseComment": "OPLQA_Shubham",
+        "sourceOrderID": "83395849",
+        "sourceLineID": "144481369"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>{{t}}</title>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/style.css')}}" >
+	</head>
+<body>
+	<h1>{{h}}</h1>
+	<hr>
+	{% if todos[0] %}
+	<h3>Result of the Search : Hold List</h3>
+	<table>
+	    <tr id="row">
+	    	<td class="releaseFlag">releaseFlag</td>
+	    	<td class="name">Hold Name</td>
+	    	<td class="applyResn">Apply Reason</td>
+	    	<td class="applyBy">Applied By</td>
+	    	<td class="lnRefNum">Line Ref Num</td>
+		<td class="func">Release Hold</td>
+	    </tr>
+		{% for todo in todos %}
+		<tr class="datas">
+			<td><a href="./releaseFlag?_id={{ todo['_id'] }}"><input type="image" src="static/images/{{todo['releaseFlag']}}.png" alt="Submit ME"></a></td>
+			<td class="name">{{ todo["holdNm"] }}</td>
+			<td class="applyResn">{{ todo["applyResn"] }}</td>
+			<td class="applyBy">{{ todo["applyBy"] }}</td>
+			<td class="lnRefNum">{{ todo["lnRefNum"] }}</td>
+
+			<td class="func1"><a href="./remove?_id={{ todo['releaseFlag'] ,todo['holdNm'],todo['holdId'],todo['lnRefNum']}}"><button type="submit">Release</button></a></td>
+
+
+		</tr>
+		{% endfor %}
+	{% else %}
+		<h4>Order not found !!</h4>
+	{% endif %}
+	</table>
+	<a href="/">Return to TaskList</a>
+</body>
+</html>

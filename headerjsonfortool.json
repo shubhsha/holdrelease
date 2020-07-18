@@ -1,0 +1,24 @@
+{
+  "HoldRequest": {
+    "sender": {
+      "serviceContext": {
+        "svcType": 965,
+        "requestType": "RELEASE",
+        "version": 1
+      },
+      "userID": "shubhsha",
+      "applicationName": "OPL",
+      "proxyUserID": "OPLADMIN",
+      "userType": "External"
+    },
+    "requestPayload": [
+      {
+        "holdID": "30168",
+        "holdName": "Co-Ordinated Booking",
+        "holdReleaseReason": "releasing from OPL WF",
+        "holdReleaseComment": "Released from OPL QA Tool",
+        "sourceOrderID": "83395849"
+      }
+    ]
+  }
+}

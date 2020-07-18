@@ -1,0 +1,25 @@
+{
+  "HoldRequest": {
+    "sender": {
+      "serviceContext": {
+        "svcType": 965,
+        "requestType": "RELEASE",
+        "version": 1
+      },
+      "userID": "shubhsha",
+      "applicationName": "OPL",
+      "proxyUserID": "OPLADMIN",
+      "userType": "External"
+    },
+    "requestPayload": [
+      {
+        "holdId": "1",
+        "holdName": "CMFS-Credit Check Pending",
+        "holdReleaseReason": "Manual Credit Approval",
+        "holdReleaseComment": "Released from OPL QA Tool",
+        "sourceLineID": "",
+        "sourceOrderID": "83456626"
+      }
+    ]
+  }
+}
