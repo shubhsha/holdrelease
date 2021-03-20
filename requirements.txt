@@ -12,7 +12,7 @@ Flask-SQLAlchemy==2.4.3
 get==2019.4.13
 idna==2.6
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 jsonify==0.5
 MarkupSafe==1.1.1
 numpy==1.19.0
